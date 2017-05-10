@@ -16,5 +16,17 @@ namespace Example4
         {
             InitializeComponent();
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            int iValue;         //変数 iValueの宣言
+            iValue = int.Parse(tbxNum.Text);
+            lblAns.Text = String.Format("{0}", iValue * 10);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
